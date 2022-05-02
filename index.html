@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MODFLOW-OWHM</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="head">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="images/logo.svg" alt="MODFLOW Logo">
+			</div>
+			<div class="col-sm-8">
+				<nav class="navbar navbar-expand-sm navbar-light ">
+					<a class="navbar-brand" href="#"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+				  
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav mc-auto">
+						<li class="nav-item active">
+						  <a class="nav-link" href="index.html">home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  start
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item" href="name.html">name file</a>
+							  <a class="dropdown-item" href="supplemental.html">supplemental</a>
+							</div>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="faq.html">faq</a>
+						</li>
+					  </ul>
+					</div>
+				  </nav>
+			</div>
+		</div>
+		<div class="txtbanner">
+			<div class="col-sm-12">
+				<h2 class="fs-4">Introduction to MODFLOW-OWHM
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="midtop">
+		<div class="col-sm-12">
+			<h1 class="fs-3"></h1>
+			<p>MODFLOW-OWHM is a specific version of MODFLOW that features a conjunctive use, which is the combined use of groundwater and surface water. MODFLOW-OWHM uses a physically-based supply and demand framework. Users can represent farms, streamflow routing, and riparian evapotranspiration with the Farm Process Package (FMP), which is a unique feature of MODFLOW-OWHM.
+			</p>
+		</div>
+	</div>
+	<div class="fig">
+		<div class="row">
+			<div class="col-sm-12">
+				<p><img src="images/main.png"></p>
+			</div>
+		</div>
+	</div>
+	<div class="midcontainer">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="fs-2">Note: This guide only reflects <a href="https://ca.water.usgs.gov/modeling-software/one-water-hydrologic-model/users-manual/index.html">MODFLOW-OWHM</a></h2>
+				<p>Guides to other versions of MODFLOW can be found at the following locations:
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<p>
+					<ul>
+						<li><a href=" https://water.usgs.gov/nrp/gwsoftware/modflow2000/Guide/index.html">MODFLOW-2000</a></li>
+						<li><a href="https://water.usgs.gov/ogw/modflow-nwt/MODFLOW-NWT-Guide/">MODFLOW-NWT</a></li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="col-sm-3">
+				<p>
+					<ul>
+						<li><a href="https://water.usgs.gov/ogw/modflow/MODFLOW-2005-Guide/">MODFLOW-2005</a></li>
+						<li><a href=" https://water.usgs.gov/ogw/cfp/cfp.htm">	MODFLOW-CFP</a></li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="col-sm-3">
+				<p>
+					<ul>
+						<li><a href="https://water.usgs.gov/ogw/modflow-lgr/MODFLOW-LGR-Guide/index.html">MODFLOW-LGR</a></li>
+						<li><a href="https://water.usgs.gov/ogw/modflow/mf6io_6.0.3.pdf.">MODFLOW 6</a></li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="col-sm-3">
+				<p>
+					<ul>
+						<li><a href="https://water.usgs.gov/nrp/gwsoftware/modflow2000/MFDOC/index.html">Combined Guide</a></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="botheader">
+		<div class="col-sm-12">
+			<h2 class="fs-4">Disclaimer</h2>
+		</div>
+	</div>
+
+	<div class="bot">
+		<div class="col-sm-12">
+				<p>Although every effort is made to provide timely and accurate information, the authors,
+				the U.S. Geological Survey (USGS), and the U.S. Government make no warranty, expressed
+				or implied, as to the timeliness or accuracy of the contents of this web site, which
+				may be updated and revised at any time. Any use of trade, product, or firm names in
+				this publication is for descriptive purposes only and does not imply endorsement by
+				the U.S. Government. Any links to non-Government web sites are provided for
+				convenience only and do not imply endorsement by the U.S. Government.</p>
+				
+				<p>Website content originally compiled by <a href="mailto:rbwinst@usgs.gov">Richard B. Winston</a>.
+				Portions of the website have been updated by <a href="mailto: dherbert@usgs.gov">Deidre Herbert</a>.</p>
+		</div>
+	</div>
+
+	<footer>
+		<img src="images/squiggle.svg" alt="squiggle">
+		<p>Copyright &copy; 2021</p>
+	</footer>
+</div>
+
+
+</body>
+</html>

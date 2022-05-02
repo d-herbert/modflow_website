@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    padding-top: 3%;
+}
+
+footer img {
+    background: #226d7bff;
+    padding: 0%;
+    width: 100%;
+}
+
+body {
+    position: relative !important;
+    font-family: 'Courier Prime', monospace;
+}
+
+p {
+    font-size: 1em;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+.head {
+    background-image: url("../images/header.svg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.dropdown-menu{
+    background-color: #226d7bff;;
+    border: none;
+    font-size: 90% !important;
+  }
+
+.dropdown-item:hover {
+    text-decoration:underline !important;
+    background-color: #226d7bff !important;
+    color: #f5c39aff !important;
+}
+
+.txtbanner {
+    text-align: center;
+    background-color: #226d7bff;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 11%;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.dropdown-item {
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5c39aff !important;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+form * {
+	display: block;
+	margin: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #f5c39aff;
+    color: #226d7bff !important;
+}
+
+.fs-1 {
+    color: #f5c39aff;
+    text-align: center;
+    font-size: 300% !important;
+    font-weight: bold;
+}
+
+.fs-4 {
+    color: #f5c39aff;
+    font-size:  200% !important;
+    font-weight: bold;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.midcontainer {
+    background-color: #9ddbe7ff;
+    padding-top: 1%;
+}
+
+.midtop {
+    background-color: #67a8b4ff;
+    padding: 1%;
+    font-size: 1.25em;
+}
+
+img {
+    padding: 6.5%;
+}
+
+.midcontainer .row img {
+    background: white;
+}
+
+.midcontainer .row {
+    padding: 1%;
+}
+
+.midcontainer p {
+    padding: 2%;
+}
+
+.botheader {
+    background-color: #226d7bff;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 0.2%;
+}
+
+.bot {
+    background-color: #67a8b4ff;
+    padding: 1%;
+}
+
+.typing p{
+    width: 30ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+}
+
+.typing ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typing ul li {
+    display: inline-block;
+}
+
+.btn-primary {
+    color: black !important;
+    background-color: white !important;
+    border: none;
+}
+
+.test p{
+    padding-top: 2%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.fig img {
+    width: 95%;
+}
+
+.faq {
+    color: #67a8b4ff;; 
+}
+
+.faq p{
+    padding-top: 2%;
+    display: flex;
+    padding-left: 2%;
+    color: black;
+}
+
+.faq ul{
+    padding-top: 2%;
+    padding-left: 4%;
+    color: black;
+}
+
+.card-body {
+    border: none;
+}
+
+.test .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem #f5c39aff !important;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+summary:hover {
+    text-decoration: underline #f5c39aff ;
+    text-decoration-thickness: 20%;
+}
+
+.hide {
+    display: none;
+}
+
+#download_btn {
+    color: #226d7bff;
+    background-color: #f5c39aff;
+}
+
+#download_btn:focus {
+    box-shadow: 0 0 0 0.25rem #226d7bff !important;
+}
+.carousel {
+    width: 70%;
+}
+
+.carousel-caption {
+    color: black !important;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+  }
+
+/* animations */
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+        
+@keyframes blink {
+    50% {
+    border-color: transparent
+}
+}
+
+/* media queries  */
+/* my widescreen monitor is ~3000px */
+@media screen and (max-width: 3000px) {
+    .navbar ul li {
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .navbar ul li {
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .navbar ul li {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .navbar ul li {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar ul li {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        font-size: 70%;
+    }
+    .head img {
+        width: 80%;
+    }
+    .navbar ul li {
+        margin-left: 20%;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        font-size: 60%;
+    }
+
+    .head img {
+        width: 80%;
+    }
+    .head {
+        background-size: 120%;
+    } 
+    .container {
+        font-size: 90%;
+    }
+
+    .navbar ul li {
+        margin-left: 20%;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        font-size: 60%;
+    }
+
+    .head img {
+        width: 80%;
+    }
+    .head {
+        background-size: 120%;
+    } 
+    .navbar ul li a {
+        font-size: 2em;
+    }
+
+    .navbar ul li {
+        margin-left: 20%;
+    }
+
+    .midcontainer ul li {
+        font-size: 70%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .head img {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .container {
+        font-size: 85%;
+    }
+    .navbar {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .col-sm-8 {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar, .navbar-nav {
+        display: inline-block;
+        float: none;
+      }
+      
+    .navbar, .navbar-collapse {
+        text-align: center;
+      
+    }
+    .dropdown-item {
+        background: #f5c39aff;
+        background-color: #f5c39aff;
+        color: #226d7bff  !important;
+    }
+    .dropdown-item:hover {
+        text-decoration:underline !important;
+        color: #226d7bff  !important;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #226d7bff  !important;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        background-color: none;
+    }
+    #navbarDropdown, .dropdown-item {
+        background: white;
+   
+    }
+    #navbarDropdown:hover {
+        background: #f5c39aff;
+    }
+    .dropdown-menu:hover, .dropdown-menu {
+        background: white;
+    }
+    .dropdown-item:hover {
+        background-color: white !important;
+    }
+    .midcontainer ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .midcontainer ul li {
+        width: 40%;
+        font-size: 100%
+    }
+
+}
+
+/*  tested smaller px sizes and seems to look good */

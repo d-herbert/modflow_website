@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MODFLOW-OWHM</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/form.js"></script>
+	<script src="js/autofill.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="head">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="images/logo.svg" alt="MODFLOW Logo">
+			</div>
+			<div class="col-sm-8">
+				<nav class="navbar navbar-expand-sm navbar-light ">
+					<a class="navbar-brand" href="#"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+				  
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav mc-auto">
+						<li class="nav-item active">
+						  <a class="nav-link" href="index.html">home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  start
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item" href="name.html">name file</a>
+							  <a class="dropdown-item" href="supplemental.html">supplemental</a>
+							</div>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="faq.html">faq</a>
+						</li>
+					  </ul>
+					</div>
+				  </nav>
+			</div>
+		</div>
+		<div class="txtbanner">
+			<div class="col-sm-12">
+				<h1 class="fs-4">What is the Name File?
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="midtop">
+		<div class="col-sm-12">
+			<h2 class="fs-3"></h2>
+			<p>The name file specifies the names of the input and output files, associates each
+			file name with a unit number and identifies the packages that will be used in the
+			model. The name file contains the names of most input and output files used in a
+			model simulation and controls the parts of the model program that are active.
+			</p>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="botheader">
+			<div class="col-sm-12">
+				<h2 class="fs-4">Make your own!</h2>
+			</div>
+		</div>
+	
+		<div class="input">
+			<div class="row">
+				<div class="typing">
+				<br>
+				<p># Build your own file below...</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="test">
+			<div class="row">
+				<div class="col-lg">
+					<p>Ftype</p>
+				</div>
+				<div class="col-lg">
+					<p>Nunit</p>
+				</div>
+				<div class="col-lg">
+					<p>Fname</p>
+				</div>
+				<div class="col-lg">
+					<p>[LSTVL]</p>
+				</div>
+				<div class="col-lg">
+					<p>[Option]</p>
+				</div>
+				<div class="col-lg">
+					<p>Add Row</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="test">
+			<form name="myform" method="post" >
+				<div class="row">
+					<div class="col-lg">
+						<p>
+						<select id="Ftype" name="Ftype" onclick="getElementById('ftype').value=this.value" onchange="updateText('Ftype')">
+							<option value="">SELECT</option>
+							<option value="GLOBAL">GLOBAL</option>
+							<option value="LIST">LIST</option>
+							<option value="DIS">DIS</option>
+							<option value="MULT">MULT</option>
+							<option value="ZONE">ZONE</option>
+							<option value="PVAL">PVAL</option>
+							<option value="BAS6">BAS6</option>
+							<option value="OC">OC</option>
+							<option value="BCF6">BCF6</option>
+							<option value="1">LPF</option>
+							<option value="LPF">RCH</option>
+							<option value="WEL">WEL</option>
+							<option value="LAK">LAK</option>
+							<option value="SFR">SFR</option>
+							<option value="RES">RES</option>
+							<option value="HYD">HYD</option>
+							<option value="FMP">FMP</option>
+						</select>
+						</p>
+					</div>
+					<div class="col-lg">
+						<p>
+						<input type="number" name="Nunit" min="1" max="97" onclick="getElementById('nunit').value=this.value">
+						</p>
+					</div>
+					<div class="col-lg">
+						<p>
+						<input type="text" name="Fname" value="" id="FtypeText" size="6">	
+						</p>
+					</div>
+					<div class="col-lg">
+						<p>
+						<select id="LSTVL" name="LSTVL" onclick="getElementById('lstvl').value=this.value">
+							<option value="">&nbsp;</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+						</p>
+					</div>
+					<div class="col-lg">
+						<p>
+						<select id="Option" name="Option" onclick="getElementById('option').value=this.value">
+							<option value="">&nbsp;</option>
+							<option value="REPLACE">REPLACE</option>
+							<option value="OLD">OLD</option>
+							<option value="UNKNOWN">UNKNOWN</option>
+						</select>
+						</p>
+					</div>
+					<div class="col-lg">
+						<p>
+						<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#addrow" aria-expanded="false" aria-controls="addrow">
+						+ 
+						</button>
+						</p>
+					</div>
+					<div class="collapse" id="addrow">
+						<div class="card card-body">
+							<p>Hoping to learn how to do this in JS in web dev 2.0...planning to add another row of entries.</p>
+						</div>
+					</div>
+				</div>
+				<div class="hide">
+					<div style="display:unblock">
+						Option 1 <input type="radio" value="Option 1" onclick="getElementById('ftype').value=this.value; getElementById('ftype').show()" style="display:inline" />
+						Option 2 <input type="radio" value="Option 2" onclick="getElementById('ftype').value=this.value;" style="display:inline" />
+						<input type="text" id="ftype" />
+					</div>
+					<div style="display:unblock">
+						Option 1 <input type="radio" value="Option 1" onclick="getElementById('nunit').value=this.value; getElementById('nunit').show()" style="display:inline" />
+						Option 2 <input type="radio" value="Option 2" onclick="getElementById('nunit').value=this.value;" style="display:inline" />
+						<input type="text" id="nunit" />
+					</div>
+					<div style="display:unblock">
+						Option 1 <input type="radio" value="Option 1" onclick="getElementById('fname').value=this.value; getElementById('fname').show()" style="display:inline" />
+						Option 2 <input type="radio" value="Option 2" onclick="getElementById('fname').value=this.value;" style="display:inline" />
+						<input type="text" id="fname" />
+					</div>
+					<div style="display:unblock">
+						Option 1 <input type="radio" value="Option 1" onclick="getElementById('lstvl').value=this.value; getElementById('lstvl').show()" style="display:inline" />
+						Option 2 <input type="radio" value="Option 2" onclick="getElementById('lstvl').value=this.value;" style="display:inline" />
+						<input type="text" id="lstvl" />
+					</div>
+					<div style="display:unblock">
+						Option 1 <input type="radio" value="Option 1" onclick="getElementById('option').value=this.value; getElementById('option').show()" style="display:inline" />
+						Option 2 <input type="radio" value="Option 2" onclick="getElementById('option').value=this.value;" style="display:inline" />
+						<input type="text" id="option" />
+					</div>
+				</div>
+				<p><input id="download_btn" type="submit" class="btn" value="Click Here to Generate Name File"  onclick="download(); return false"></p><br>
+			</form>	
+		</div>
+	</div>
+
+	<div class="botheader">
+		<div class="col-sm-12">
+			<h2 class="fs-4">Name File Guide</h2>
+		</div>
+	</div>
+	<div class="midcontainer">
+		<p>Ftype—is the file type, which must be one of the following character values. Ftype may be entered in all uppercase, all lowercase, or any combination.</p>
+		<p>Nunit—is the Fortran unit to be used when reading from or writing to the file.</p>
+	
+		<p>Fname—is the name of the file, which is a character value. Options: name of the file with no spaces.</p>
+
+		<p>If Ftype is LIST, LSTLVL can be specified. LSTLVL allows suppression of some or all output to the listing file.</p>
+
+		<p>Option—New options for the name file allow users to designate files of type DATA, DATA(BINARY), DATAGLO, or DATAGLO(BINARY) as either input or output files.</p><br>
+	</div>
+
+	<footer>
+		<img src="images/squiggle.svg" alt="squiggle">
+		<p>Copyright &copy; 2021</p>
+	</footer>
+</div>
+</body>
+</html>
